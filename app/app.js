@@ -1,0 +1,1 @@
+var deeditApp = angular.module('deeditApp', []);
