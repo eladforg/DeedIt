@@ -2,23 +2,23 @@ var deeditApp = angular.module('deeditApp', ['ngRoute']);
 
 
 //creating router:
-// deeditApp.config(function($routeProvider){
+deeditApp.config(function($routeProvider){
 
-//     $routeProvider
-//     .when("/", {
-//         templateUrl:"app/home/home.html",
-//         controller:"homeCtrl"
-//     })
-//     .when("/gallery", {
-//         templateUrl:"app/dogsList/dogsList.html",
-//         controller:"dogsListCtrl"
-//     })
-//     .when("/chosendog/:breedName", {
-//         templateUrl:"app/chosenDogImages/chosenDogImages.html",
-//         controller:"chosenDogCtrl"
-//     })
-//     .otherwise({
-//         redirectTo:"/"
-//     })
+    $routeProvider
+    .when("/", {
+        templateUrl:"app/home/home.html",
+        controller:"homeCtrl"
+    })
+    .when("/projects", {
+        templateUrl:"app/projects/projects.html",
+        controller:"projectsCtrl"
+    })
+    .when("/profile", {
+        templateUrl:"app/profile/profile.html",
+        controller:"profileCtrl"
+    })
+    .otherwise({
+        redirectTo:"/"
+    })
 
-// });
+});
