@@ -1,0 +1,25 @@
+
+
+
+[
+    {
+    "projectName":"Born to be Free",
+    "projectImage":"app/images/dogi.png",
+    "projectSummary":"Help us raise money so we can feed and shelter abondend dogs.",
+    "projectGoal":"10000"
+    },
+
+    {
+    "projectName":"Give a Meal",
+    "projectImage":"app/images/2girls.jpg",
+    "projectSummary":"Let's ensure a daily notritious meal for more kids.",
+    "projectGoal":"20000"
+    },
+
+    {   
+    "projectName":"Fulfill a Dream",
+    "projectImage":"app/images/dreams.png",
+    "projectSummary":"Together we can give them happier days.",
+    "projectGoal":"15000"
+    }
+]
