@@ -1,1 +1,31 @@
-home page
+<!-- home page -->
+
+<div id="home-page-body">
+
+    <div class="container">
+
+        <h4 class="text-center">You're supporting</h4>
+        <h4 class="text-center">{{name of chosen project}}</h4>
+
+        <div class="col" id="current-project-card">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{projectItem.projectImage}}" alt="Card image cap">
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Goal: {{projectItem.projectGoal | currency}}</li>
+                    <li class="list-group-item">Days to go:</li>
+                    <li class="list-group-item">Status</li>
+                    <li class="list-group-item">More Info</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Change</a>
+                    <a href="#" class="btn btn-primary">Support</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
