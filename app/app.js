@@ -17,6 +17,15 @@ deeditApp.config(function($routeProvider){
         templateUrl:"app/profile/profile.html",
         controller:"profileCtrl"
     })
+
+    .when("/video", {
+        templateUrl:"app/videoAd/videoAd.html",
+        controller:"videoAdCtrl"
+    })
+    .when("/welcome", {
+        templateUrl:"welcome.html",
+        // controller:"videoAdCtrl"
+    })
     .otherwise({
         redirectTo:"/"
     })
