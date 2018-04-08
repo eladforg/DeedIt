@@ -16,6 +16,7 @@ deeditApp.factory('activeUserSer', function($q, $http){
     // loading the json of all users:
 
     function loadUsers(){
+        usersArray.splice(0,usersArray.length);
         var async = $q.defer();
 
         $http.get('app/data/users.json').then(

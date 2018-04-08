@@ -6,8 +6,8 @@ deeditApp.config(function($routeProvider){
 
     $routeProvider
     .when("/", {
-        templateUrl:"welcome.html",
-        // controller:"videoAdCtrl"
+        templateUrl:"app/welcome/welcome.html",
+        controller:"welcomeCtrl"
     })
     .when("/home", {
         templateUrl:"app/home/home.html",

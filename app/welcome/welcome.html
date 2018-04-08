@@ -89,18 +89,18 @@
                     <form action="#">
                         
                         <div class="form-group">                        
-                            <input type="email" class="form-control" id="accessEmail" aria-describedby="emailHelp" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="accessEmail" ng-model="useremail" aria-describedby="emailHelp" placeholder="Enter your email">
                             
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="accessPassword1" placeholder="Type your Password">
+                            <input type="password" class="form-control" id="accessPassword1" ng-model="userpass" placeholder="Type your Password">
                         </div>
-                                                                       
+                                                                      
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Log In</button>
+                    <button type="button" class="btn btn-primary" ng-click="loadCompare()">Log In</button>
                 </div>
             </div>
         </div>
