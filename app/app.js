@@ -6,6 +6,10 @@ deeditApp.config(function($routeProvider){
 
     $routeProvider
     .when("/", {
+        templateUrl:"welcome.html",
+        // controller:"videoAdCtrl"
+    })
+    .when("/home", {
         templateUrl:"app/home/home.html",
         controller:"homeCtrl"
     })
@@ -22,12 +26,9 @@ deeditApp.config(function($routeProvider){
         templateUrl:"app/videoAd/videoAd.html",
         controller:"videoAdCtrl"
     })
-    .when("/welcome", {
-        templateUrl:"welcome.html",
-        // controller:"videoAdCtrl"
-    })
+    
     .otherwise({
-        redirectTo:"/"
+        redirectTo:"/home"
     })
 
 });
