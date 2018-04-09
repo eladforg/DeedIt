@@ -6,20 +6,23 @@
     "projectName":"Born to be Free",
     "projectImage":"app/images/dogi.png",
     "projectSummary":"Help us raise money so we can feed and shelter abondend dogs.",
-    "projectGoal":"10000"
+    "projectGoal":"10000",
+    "deadline": "2018,5,31"
     },
 
     {
     "projectName":"Give a Meal",
     "projectImage":"app/images/2girls.jpg",
     "projectSummary":"Let's ensure a daily notritious meal for more kids.",
-    "projectGoal":"20000"
+    "projectGoal":"20000",
+    "deadline": "2018,5,25"
     },
 
     {   
     "projectName":"Fulfill a Dream",
     "projectImage":"app/images/dreams.png",
     "projectSummary":"Together we can give them happier days.",
-    "projectGoal":"15000"
+    "projectGoal":"15000",
+    "deadline": "2018,6,1"
     }
 ]

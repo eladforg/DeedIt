@@ -12,9 +12,18 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
         this.projectSummary=projObj.projectSummary;
         this.projectGoal=projObj.projectGoal;
         // this.projectFullInfo=projectFullInfo;
-        // this.projectDaysLeft= function(projectDaysLeft){};
+        this.projectDaysLeft= daysTimer(projObj.deadline);
         // this.progressBar= function(progressBar){};
 
+    }
+
+    //creating a countdown day timer:
+    function daysTimer(endDay){
+        var endDate = new Date(endDay).getTime(); //milsec
+        var currentdate = new Date().getTime();
+        var daysLeft = endDate-currentdate;
+        daysLeft = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
+        return daysLeft;
     }
 
 
