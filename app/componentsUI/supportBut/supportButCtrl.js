@@ -5,6 +5,7 @@ deeditApp.controller('supportButCtrl', function($scope, activeUserSer, projectsS
     // updating the user object on the project he's supporting:
     $scope.supportProject = function(){
         console.log(activeUserSer.activeUser);
+        console.log(projectsSer.projectName);
     }
 
 

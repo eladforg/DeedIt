@@ -13,7 +13,13 @@ deeditApp.factory('activeUserSer', function($q, $http){
     }
    
     var usersArray=[];
-    var activeUser=null;
+
+    // we need activeUser and for now we'll use a demo one. so we dont have to login.
+    var activeUser={
+        "name":"remo user",
+        "email":"r@go.co",
+        "password":"321"
+    };
     //when user logs in, first with one hard-coded user:
     // loading the json of all users:
 
@@ -44,8 +50,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
    //the access:
     return{
         loadUsers:loadUsers,
-        usersArray:usersArray
-
+        usersArray:usersArray,
+        activeUser:activeUser
     }
 
 });
