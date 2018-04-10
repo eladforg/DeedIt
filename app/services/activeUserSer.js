@@ -8,10 +8,12 @@ deeditApp.factory('activeUserSer', function($q, $http){
         this.name = user.name;
         this.email = user.email;
         this.password = user.password;
+        this.totalCoins=0;
+        this.projectsObjArray=[{projectName:"", userCoinsForProject:""},{projectName:"", userCoinsForProject:""}];
     }
    
     var usersArray=[];
-
+    var activeUser=null;
     //when user logs in, first with one hard-coded user:
     // loading the json of all users:
 

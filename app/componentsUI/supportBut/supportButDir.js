@@ -3,7 +3,8 @@
 deeditApp.directive('supportBut', function(){
     
     return {
-            templateUrl:"app/componentsUI/supportBut/supportBut.html"
+            templateUrl:"app/componentsUI/supportBut/supportBut.html",
+            controller: 'supportButCtrl'
     };
     
 });
