@@ -3,7 +3,7 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
 
     $scope.usersArray=[];
 
-        
+    
     var isUserValid = false;
     
     // function for loading and comparing users:
@@ -16,10 +16,9 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
         
         //and then comparing:
         $scope.compareUser();
-        if (isUserValid){
-        element.modal("hide");
-        $location.path('/projects');
-        }else{}
+        
+        //and moving on to next page:
+        $scope.afterLoginPage();
     });
 
     }
@@ -44,7 +43,14 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
         alert("are you sure?")
     }
 
-    
+    // function to move to next page after valid login:
+    $scope.afterLoginPage = function (){
+        if (isUserValid){
+            //hiding the modal using jquery (though it's not a good practice to use jquery with angular, rather angularUI bootstrap)
+            $('.modal-backdrop.show').hide();
+            $location.path('/projects');
+            }else{}
+    }
     
 
 
