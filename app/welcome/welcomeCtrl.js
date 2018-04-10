@@ -1,4 +1,4 @@
-deeditApp.controller('welcomeCtrl', function($scope,activeUserSer){
+deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
 
 
     $scope.usersArray=[];
@@ -28,6 +28,7 @@ deeditApp.controller('welcomeCtrl', function($scope,activeUserSer){
 
             if($scope.useremail == $scope.usersArray[i].email && $scope.userpass == $scope.usersArray[i].password){
                 alert ("user exist");
+                $location.path('/projects');
                 return true;
             }else{
                 
