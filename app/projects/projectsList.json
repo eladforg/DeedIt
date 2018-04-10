@@ -4,6 +4,7 @@
 [
     {
     "projectName":"Born to be Free",
+    "projectID":"11",
     "projectImage":"app/images/dogi.png",
     "projectSummary":"Help us raise money so we can feed and shelter abondend dogs.",
     "projectGoal":"10000",
@@ -12,6 +13,7 @@
 
     {
     "projectName":"Give a Meal",
+    "projectID":"22",
     "projectImage":"app/images/2girls.jpg",
     "projectSummary":"Let's ensure a daily notritious meal for more kids.",
     "projectGoal":"20000",
@@ -20,6 +22,7 @@
 
     {   
     "projectName":"Fulfill a Dream",
+    "projectID":"33",
     "projectImage":"app/images/dreams.png",
     "projectSummary":"Together we can give them happier days.",
     "projectGoal":"15000",

@@ -8,6 +8,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
     //project constructor:
     var Project = function(projObj){
         this.projectName=projObj.projectName;
+        this.projectID=projObj.projectID;
         this.projectImage=projObj.projectImage;
         this.projectSummary=projObj.projectSummary;
         this.projectGoal=projObj.projectGoal;
