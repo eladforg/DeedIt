@@ -22,7 +22,7 @@ deeditApp.config(function($routeProvider){
         controller:"profileCtrl"
     })
 
-    .when("/video", {
+    .when("/video/:projID", {
         templateUrl:"app/videoAd/videoAd.html",
         controller:"videoAdCtrl"
     })

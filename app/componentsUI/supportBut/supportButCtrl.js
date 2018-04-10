@@ -11,9 +11,10 @@ deeditApp.controller('supportButCtrl', function($scope, $location, activeUserSer
 
     // supporting a project:
     $scope.supportThisProject = function(projectObject){
-        console.log(projectObject.projectID);
-        $location.path('/video/'+projectObject.projectID);
-
+        // console.log(projectObject.projectID);
+        var projID=projectObject.projectID;
+        $location.path('/video/'+projID);
+    //    console.log('/video/'+projectObject.projectID);
     }
 
 
