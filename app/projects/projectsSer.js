@@ -15,6 +15,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
         // this.projectFullInfo=projectFullInfo;
         this.projectDaysLeft= daysTimer(projObj.deadline);
         // this.progressBar= function(progressBar){};
+        //this.projectCoins = projObj.projectCoins;
 
     }
 
