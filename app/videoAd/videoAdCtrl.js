@@ -20,16 +20,44 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     }
 
 
-    //connecting with the relevant user:
+    //connecting with the relevant userobject:
+    $scope.currentUser = activeUserSer.activeUser;
     
+
+     
     
-    
-    
-    //collecting coins per video
-    // var coins=0;
-    // $scope.collectCoins = function(){
-    //     coins += 25;
-    //     return coins;
-    // }
+    //collecting coins per video, and requesting another video:
+    var coins=0;
+
+    $scope.collectAndRequest = function(){
+        $scope.collectCoins();
+        $scope.requestVideo();
+    }
+
+    // function for both total coins and per project coins
+    $scope.collectCoins = function(){
+        $scope.userTotalCoins();
+        $scope.userPerProjectCoins();
+    }
+    // specific function for total coins:
+    $scope.userTotalCoins = function(){
+        coins += 25;
+        console.log(coins);
+        return coins;
+    }
+
+    // specific function for per user per project:
+    $scope.userPerProjectCoins = function(){
+        
+    }
+
+    // specific function to add coins to a project (regardless of the user):
+    $scope.addtoProjectCoins = function(){
+        
+    }
+    // specific function for requesting video:
+    $scope.requestVideo = function(){
+        
+    }
 
 });
