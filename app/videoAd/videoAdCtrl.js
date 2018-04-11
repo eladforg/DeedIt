@@ -27,23 +27,23 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
      
     
     //collecting coins per video, and requesting another video:
-    var coins=0;
+    $scope.coins=0;
 
     $scope.collectAndRequest = function(){
         $scope.collectCoins();
-        $scope.requestVideo();
+        // $scope.requestVideo();
     }
 
     // function for both total coins and per project coins
     $scope.collectCoins = function(){
         $scope.userTotalCoins();
-        $scope.userPerProjectCoins();
+        // $scope.userPerProjectCoins();
     }
     // specific function for total coins:
     $scope.userTotalCoins = function(){
-        coins += 25;
-        console.log(coins);
-        return coins;
+        $scope.coins += 25;
+        console.log($scope.coins);
+        return $scope.coins;
     }
 
     // specific function for per user per project:
