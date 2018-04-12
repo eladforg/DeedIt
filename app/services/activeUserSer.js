@@ -18,7 +18,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
     var activeUser={
         "name":"remo user",
         "email":"r@go.co",
-        "password":"321"
+        "password":"321",
+        "totalCoins":0
     };
     //when user logs in, first with one hard-coded user:
     // loading the json of all users:

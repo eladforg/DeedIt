@@ -4,7 +4,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
 
     // array of projects
     var projectsArray=[];
-    
+    var wasEverLoaded=false;
     //project constructor:
     var Project = function(projObj){
         this.projectName=projObj.projectName;
@@ -32,10 +32,14 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
     // uploading projects with a $q load function:
     var load =function(){
 
-        projectsArray.splice(0,projectsArray.length);
+        // projectsArray.splice(0,projectsArray.length);
 
         var async = $q.defer();
-
+        // Checking if the projects array was ever loaded:
+        if (wasEverLoaded) {
+            // Immediatly resolving the promise since cars is already available
+            async.resolve();
+        } else {
         $http.get("app/projects/projectsList.json").then(function(response){
             //onsuccess:
             // console.log(response);
@@ -47,7 +51,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
                   
                 }          
             
-                        
+            wasEverLoaded=true;            
             async.resolve();
             },
                 // onfail:
@@ -56,6 +60,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
                 async.reject();
             }
         );
+        }
         return async.promise;   
     };
 
