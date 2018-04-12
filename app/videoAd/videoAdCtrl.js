@@ -3,8 +3,8 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     
     // we always need to make sure projects array is loaded, so we call it:
     projectsSer.load();
-    //name of current project:
 
+    //taking the current project id:
     $scope.currentProjectID = $routeParams.projID;
     $scope.currentProjectObject=null;
 
@@ -23,14 +23,22 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
 
 
     //connecting with the relevant userobject:
-    $scope.currentUser = activeUserSer.activeUser;
+    $scope.currentUser = activeUserSer.activeUser; //perhaps we shall not use it as we always want to use the existing user from the usersServive.
     
 
-     
+// connecting the current project with current user:
+    
+    if(!activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]){
+        activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]=0;
+    }else{
+        
+    }
+    
+    
+    
     
     //collecting coins per video, and requesting another video:
     
-
     $scope.collectAndRequest = function(){
         $scope.collectCoins();
         // $scope.requestVideo();
@@ -40,7 +48,7 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     $scope.collectCoins = function(){
         $scope.userTotalCoins();
         $scope.addtoProjectCoins();
-        // $scope.userPerProjectCoins();
+        $scope.userPerProjectCoins();
     }
     // specific function for total coins:
     $scope.userTotalCoins = function(){
@@ -51,7 +59,8 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
 
     // specific function for per user per project:
     $scope.userPerProjectCoins = function(){
-        
+        activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]+=25;
+        console.log(activeUserSer.activeUser.supportedProjects);
     }
 
     // specific function to add coins to a project (regardless of the user):
@@ -64,4 +73,14 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         
     }
 
+
+
+    //at the end we're using object and not array:
+    //for(var j=0; j<=activeUserSer.activeUser.projectsObjArray.length; j++){
+        //     if($scope.currentProjectObject.projectID!=activeUserSer.activeUser.projectsObjArray[j].projectID){
+        //     activeUserSer.activeUser.projectsObjArray.push($scope.currentProjectObject);
+            
+        //     }else{}
+        // }
+        // console.log(activeUserSer.activeUser.projectsObjArray);
 });

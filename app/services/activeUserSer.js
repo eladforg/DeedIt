@@ -9,7 +9,9 @@ deeditApp.factory('activeUserSer', function($q, $http){
         this.email = user.email;
         this.password = user.password;
         this.totalCoins=0;
-        this.projectsObjArray=[{projectName:"", userCoinsForProject:""},{projectName:"", userCoinsForProject:""}];
+        // this.projectsObjArray=[]; //{projectName:"", projectID:"", userCoinsForProject:""},{projectName:"", projectID:"", userCoinsForProject:""} Nir thinks its better to use object instead of Array.
+        this.supportedProjects={}  //key-projectID : value-coins  
+        
     }
    
     var usersArray=[];
@@ -19,7 +21,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
         "name":"remo user",
         "email":"r@go.co",
         "password":"321",
-        "totalCoins":0
+        "totalCoins":0,
+        "supportedProjects":{}
     };
     //when user logs in, first with one hard-coded user:
     // loading the json of all users:
