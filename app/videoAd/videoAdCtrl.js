@@ -1,6 +1,8 @@
 
 deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, $routeParams){
     
+    
+    
     // we always need to make sure projects array is loaded, so we call it:
     projectsSer.load();
 
@@ -30,8 +32,9 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     
     if(!activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]){
         activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]=0;
+        $scope.projectCoinsbyUser=activeUserSer.activeUser.supportedProjects[$scope.currentProjectID];
     }else{
-        
+        $scope.projectCoinsbyUser=activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]
     }
     
     
@@ -60,7 +63,8 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     // specific function for per user per project:
     $scope.userPerProjectCoins = function(){
         activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]+=25;
-        console.log(activeUserSer.activeUser.supportedProjects);
+        $scope.projectCoinsbyUser=activeUserSer.activeUser.supportedProjects[$scope.currentProjectID];
+        // console.log(activeUserSer.activeUser.supportedProjects);
     }
 
     // specific function to add coins to a project (regardless of the user):
