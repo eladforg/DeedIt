@@ -1,7 +1,8 @@
 
 deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, $routeParams){
     
-    
+    // we always need to make sure projects array is loaded, so we call it:
+    projectsSer.load();
     //name of current project:
 
     $scope.currentProjectID = $routeParams.projID;
@@ -10,13 +11,13 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     //passing all the list of projectsArray:
     $scope.projectsArray=[];
     $scope.projectsArray=projectsSer.projectsArray;
-
+    
     //finding out the current chosen project:
     for(var i=0; i<$scope.projectsArray.length; i++){
 
         if ($scope.currentProjectID==$scope.projectsArray[i].projectID){
             $scope.currentProjectObject=$scope.projectsArray[i];
-            
+            // console.log($scope.currentProjectObject);
         }else{}
     }
 
@@ -38,6 +39,7 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     // function for both total coins and per project coins
     $scope.collectCoins = function(){
         $scope.userTotalCoins();
+        $scope.addtoProjectCoins();
         // $scope.userPerProjectCoins();
     }
     // specific function for total coins:
@@ -54,7 +56,8 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
 
     // specific function to add coins to a project (regardless of the user):
     $scope.addtoProjectCoins = function(){
-        
+        $scope.currentProjectObject.projectCoins+=25;
+        // console.log($scope.currentProjectObject.projectCoins);
     }
     // specific function for requesting video:
     $scope.requestVideo = function(){
