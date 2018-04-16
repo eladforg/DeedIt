@@ -1,5 +1,5 @@
 
-deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, videoAdSer, $routeParams){
+deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, videoAdSer, $timeout, $routeParams){
     
     
     
@@ -42,13 +42,29 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     // uploading a video when entering the page:
     $scope.playingVideo="app/videos/"+videoAdSer.videosArray[Math.floor(Math.random() * videoAdSer.videosArray.length)]+".mp4";
     
+    // disable/enable button:
+    $scope.buttonEnabled = true;
+    $timeout(function() {
+        $scope.buttonEnabled = false;
+        }, 4000);
+
+
     //collecting coins per video, and requesting another video:
     
     $scope.collectAndRequest = function(){
         $scope.collectCoins();
         $scope.playingVideo = videoAdSer.requestVideo();
+
+        //timer for enabling the liked buttons:
+        // disable/enable button:
+        $scope.buttonEnabled = true;
+        $timeout(function() {
+            $scope.buttonEnabled = false;
+            }, 5000);
+        
     }
 
+    
     // function for both total coins and per project coins
     $scope.collectCoins = function(){
         $scope.userTotalCoins();
@@ -79,7 +95,13 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         
     // }
 
-
+    // var buttonTimer = function(){
+        
+    //     $scope.buttonEnabled = true;
+    //     $timeout(function() {
+    //         $scope.buttonEnabled = false;
+    //         }, 4000);
+    // }
 
     //at the end we're using object and not array:
     //for(var j=0; j<=activeUserSer.activeUser.projectsObjArray.length; j++){
