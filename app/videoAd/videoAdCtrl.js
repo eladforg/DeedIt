@@ -1,5 +1,5 @@
 
-deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, $routeParams){
+deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer, videoAdSer, $routeParams){
     
     
     
@@ -39,12 +39,14 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     
     
     
+    // uploading a video when entering the page:
+    $scope.playingVideo="app/videos/"+videoAdSer.videosArray[Math.floor(Math.random() * videoAdSer.videosArray.length)]+".mp4";
     
     //collecting coins per video, and requesting another video:
     
     $scope.collectAndRequest = function(){
         $scope.collectCoins();
-        // $scope.requestVideo();
+        $scope.playingVideo = videoAdSer.requestVideo();
     }
 
     // function for both total coins and per project coins
@@ -73,9 +75,9 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         // console.log($scope.currentProjectObject.projectCoins);
     }
     // specific function for requesting video:
-    $scope.requestVideo = function(){
+    // $scope.requestVideo = function(){
         
-    }
+    // }
 
 
 
