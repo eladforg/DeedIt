@@ -57,21 +57,21 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     }
     // specific function for total coins:
     $scope.userTotalCoins = function(){
-        activeUserSer.activeUser.totalCoins+=25;
+        activeUserSer.activeUser.totalCoins+=3;
         // console.log(activeUserSer.activeUser.totalCoins);
         
     }
 
     // specific function for per user per project:
     $scope.userPerProjectCoins = function(){
-        activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]+=25;
+        activeUserSer.activeUser.supportedProjects[$scope.currentProjectID]+=3;
         $scope.projectCoinsbyUser=activeUserSer.activeUser.supportedProjects[$scope.currentProjectID];
         // console.log(activeUserSer.activeUser.supportedProjects);
     }
 
     // specific function to add coins to a project (regardless of the user):
     $scope.addtoProjectCoins = function(){
-        $scope.currentProjectObject.projectCoins+=25;
+        $scope.currentProjectObject.projectCoins+=3;
         // console.log($scope.currentProjectObject.projectCoins);
     }
     // specific function for requesting video:

@@ -9,10 +9,10 @@ deeditApp.config(function($routeProvider){
         templateUrl:"app/welcome/welcome.html",
         controller:"welcomeCtrl"
     })
-    .when("/home", {
-        templateUrl:"app/home/home.html",
-        controller:"homeCtrl"
-    })
+    // .when("/home", {
+    //     templateUrl:"app/home/home.html",
+    //     controller:"homeCtrl"
+    //})
     .when("/projects", {
         templateUrl:"app/projects/projects.html",
         controller:"projectsCtrl"
@@ -28,7 +28,7 @@ deeditApp.config(function($routeProvider){
     })
     
     .otherwise({
-        redirectTo:"/home"
+        redirectTo:"/projects"
     })
 
 });
