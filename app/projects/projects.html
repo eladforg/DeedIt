@@ -5,7 +5,7 @@
 <!-- Projects Page -->
 
 <div class="container" id="projects-body">
-    <h2 class="text-center display-4 m-3">Choose a Project</h2>
+    <h2 class="text-center display-4 m-3 text-warning">Choose a Project</h2>
 <div class="card-deck">
     <div id="projects-cards" class="row m-auto">
 
@@ -18,9 +18,9 @@
                     <a href="#" class="card-link my-1 text-info">Read More...</a>
                 </div>
                 <ul class="list-group list-group-flush my-0 ">
-                    <li class="list-group-item">Goal: {{projectItem.projectGoal | currency}}</li>
-                    <li class="list-group-item">Days to go: {{projectItem.projectDaysLeft}} days</li>
-                    <li class="list-group-item">Status</li>
+                    <li class="list-group-item d-flex">Goal: <span class="col text-right">{{projectItem.projectGoal | currency:fractionSize:0}}</span></li>
+                    <li class="list-group-item d-flex">Days to go: <span class="col text-right">{{projectItem.projectDaysLeft}} days</span></li>
+                    <li class="list-group-item d-flex">Status:<span class="col text-right"></span></li>
                 </ul>
                 <div class="card-body my-0">
                     
