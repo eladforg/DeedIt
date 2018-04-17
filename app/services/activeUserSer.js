@@ -8,6 +8,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
         this.name = user.name;
         this.email = user.email;
         this.password = user.password;
+        this.gender=user.gender; //man/woman
+        this.age=user.age; //young/adult/senior
         this.totalCoins=0;
         // this.projectsObjArray=[]; //{projectName:"", projectID:"", userCoinsForProject:""},{projectName:"", projectID:"", userCoinsForProject:""} Nir thinks its better to use object instead of Array.
         this.supportedProjects={}  //key-projectID : value-coins  
@@ -21,6 +23,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
         "name":"remo user",
         "email":"r@go.co",
         "password":"321",
+        "gender":"man",
+        "age":"adult",
         "totalCoins":0,
         "supportedProjects":{}
     };
