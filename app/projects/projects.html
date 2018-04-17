@@ -1,36 +1,42 @@
+<div class="bg-light">
+
 <navbar></navbar>
 
 <!-- Projects Page -->
+
 <div class="container" id="projects-body">
-    <h2 class="text-center">Choose a Project:</h2>
+    <h2 class="text-center display-4 m-3">Choose a Project</h2>
+<div class="card-deck">
+    <div id="projects-cards" class="row m-auto">
 
-    <div id="projects-cards" class="row">
-
-        <div class="col-sm-4 " ng-repeat="projectItem in projectsArray">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" ng-src="{{projectItem.projectImage}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{projectItem.projectName}}</h5>
-                    <p class="card-text">{{projectItem.projectSummary}}</p>
+        <div class="col-md-6 col-lg-4 my-3" ng-repeat="projectItem in projectsArray">
+            <div class="card app-box-shadow m-auto" style="width: 18rem;">
+                <img class="card-img-top" style="max-height:190px" ng-src="{{projectItem.projectImage}}" alt="Card image cap">
+                <div class="card-body my-0">
+                    <h5 class="card-title my-1" style="color:rgb(21, 147, 156)">{{projectItem.projectName}}</h5>
+                    <p class="card-text my-1">{{projectItem.projectSummary}}</p>
+                    <a href="#" class="card-link my-1 text-info">Read More...</a>
                 </div>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush my-0 ">
                     <li class="list-group-item">Goal: {{projectItem.projectGoal | currency}}</li>
                     <li class="list-group-item">Days to go: {{projectItem.projectDaysLeft}} days</li>
                     <li class="list-group-item">Status</li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">More info</a>
+                <div class="card-body my-0">
+                    
                     <support-but></support-but>
+
                 </div>
                 </div>
         </div>
      
     </div>
+</div>
 
 
 
 
 
 
-
+</div>
 </div>
