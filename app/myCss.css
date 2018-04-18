@@ -1,5 +1,51 @@
 /* my css */
 
+/* media queries */
+/* welcome logo */
+
+/* small  */
+@media(max-width:440px){
+
+    .welcome-bg{
+        background-image: url("images/welcomeMobile2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+        /* background-color: blueviolet; */
+    }
+
+    .my-welcome-logo{
+        width:250px;
+        
+    }
+
+    
+
+}
+
+@media(min-width:441px){
+
+    .welcome-bg{
+    background-image: url("images/hands.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+
+    .welcome-text h1{
+        font-size: 3em !important;
+        color: black !important;
+    }
+    .welcome-text p{
+        font-size: 2em;
+        color: black !important;
+        
+    } 
+    
+    
+}
+
+
+
 .app-box-shadow{
     box-shadow: 5px 10px 8px 3px #999;
 }
@@ -7,7 +53,7 @@
 footer{
     width:100%;
     height:40px;
-    margin-top:50px;
+    /* margin-top:0px; */
     background-color: rgb(130, 130, 130);
     text-align: end;
     padding-top: 15px;
