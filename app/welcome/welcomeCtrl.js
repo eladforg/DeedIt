@@ -47,7 +47,11 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
     $scope.afterLoginPage = function (){
         if (isUserValid){
             //hiding the modal using jquery (though it's not a good practice to use jquery with angular, rather angularUI bootstrap)
-            $('.modal-backdrop.show').hide();
+            // $('.modal-backdrop').remove();
+            // $('#signInModal').modal('toggle');
+            // $('#signInModal').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
             $location.path('/projects');
             }else{}
     }
