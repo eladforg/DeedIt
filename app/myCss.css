@@ -60,6 +60,10 @@
         margin-top: 220px;
     }
 
+    #projects-body .font-size{
+        font-size: 2em;
+    }
+
 }
 
 @media(min-width:441px){
@@ -103,6 +107,9 @@
         margin-left:175px;
     }
    
+    #projects-body .font-size{
+        font-size: 3em;
+    }
     
 }
 
