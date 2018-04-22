@@ -24,6 +24,41 @@
         height:auto
     }
     
+    #collect-btn img{
+        width:20px;
+        height:"auto"
+    }
+
+    #video-title img{
+        width:30px;
+        height:"auto";
+        border-radius: 10%;
+    }
+
+    /* #video-title .img-size{
+        width:40px;
+        height:"auto";
+        
+    } */
+
+    #video-title h4{
+        font-size: 0.7em;
+        
+    }
+
+    #video-title{
+        border: 2px solid rgb(21, 147, 156);
+        margin: 10px 10px;
+    }
+
+    .video-margin{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        margin-top: 220px;
+    }
 
 }
 
@@ -49,6 +84,25 @@
         width:70%;
         height:auto
     }
+
+    #collect-btn img{
+        width:30px;
+        height:"auto"
+    }
+
+    #video-title img{
+        width:60px;
+        height:"auto";
+        border-radius: 10%;
+    }
+
+    #video-title{
+        border: 2px solid rgb(21, 147, 156);
+        margin: 10px 10px;
+        margin-right:175px;
+        margin-left:175px;
+    }
+   
     
 }
 

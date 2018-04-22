@@ -8,18 +8,20 @@
 
     <div class="container">
 
-        <h4 class="text-center">{{currentUser.name}}, you raised {{projectCoinsbyUser}} coins for</h4>
-        <h4 class="text-center">{{currentProjectObject.projectName}}</h4>
-
-        <div class="row">
+        <div id="video-title" class="row text-center align-items-center">
+            <!-- <h4 class="text-center">You raised {{projectCoinsbyUser}} coins for</h4> -->
+            <h4 class="col-7" ><img src="{{currentProjectObject.projectImage}}" alt=""> "{{currentProjectObject.projectName}}" </h4>
+            <h4 class="col-5">{{projectCoinsbyUser}} <img src="app/images/jackpot.png" alt=""></h4>
+        </div>
+        <div class="row video-margin ">
             <div id="video ad" class="col text-center">
                 <video ng-src="{{playingVideo}}" controls autoplay></video>
             </div>
             
         </div>            
             
-        <div id="collect-btn" class="text-center">
-            <button class="btn btn-lg" ng-click="collectAndRequest()" ng-disabled="buttonEnabled">Collect Coins <img src="app/images/3-coin.png" width="30px" height="auto"></button>
+        <div id="collect-btn" class="text-center video-margin">
+            <button class="btn btn-lg" ng-click="collectAndRequest()" ng-disabled="buttonEnabled">Collect Coins <img src="app/images/3-coin.png"></button>
 
         </div>            
 

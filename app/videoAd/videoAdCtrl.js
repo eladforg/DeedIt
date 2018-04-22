@@ -92,6 +92,7 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         // console.log($scope.currentProjectObject.projectCoins);
     }
 
+    // creating a sound when collecting coins:
     $scope.coinSound = function() {
         var audio = new Audio('app/videos/coin3.mp3');
         audio.play();
