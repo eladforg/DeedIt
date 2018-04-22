@@ -52,25 +52,34 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     //collecting coins per video, and requesting another video:
     
     $scope.collectAndRequest = function(){
-        $scope.collectCoins();
+        //moving the coins up and sound effect:
+        $scope.isCollected=true;
         $scope.coinSound();
+
+        //adding coins to all relevant objects:
+        $scope.collectCoins();        
+        //requesting a new video:
         $scope.playingVideo = videoAdSer.requestVideo();
 
-        //timer for enabling the liked buttons:
+        //timer for enabling the collect coins button:
         // disable/enable button:
         $scope.buttonEnabled = true;
+                
         $timeout(function() {
             $scope.buttonEnabled = false;
+            $scope.isCollected=false;
             }, 5000);
         
     }
 
     
-    // function for both total coins and per project coins
+    // function for both total coins and per project coins (with settime to fit the coinsup animation)        
     $scope.collectCoins = function(){
+        $timeout(function(){
         $scope.userTotalCoins();
         $scope.addtoProjectCoins();
         $scope.userPerProjectCoins();
+        },1000);
     }
     // specific function for total coins:
     $scope.userTotalCoins = function(){
@@ -97,6 +106,13 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         var audio = new Audio('app/videos/coin3.mp3');
         audio.play();
     };
+
+    //animating the coins:
+    $scope.isCollected = false;
+
+
+
+
     // specific function for requesting video:
     // $scope.requestVideo = function(){
         

@@ -13,15 +13,15 @@
             <h4 class="col-7" ><img src="{{currentProjectObject.projectImage}}" alt=""> "{{currentProjectObject.projectName}}" </h4>
             <h4 class="col-5">{{projectCoinsbyUser}} <img src="app/images/jackpot.png" alt=""></h4>
         </div>
-        <div class="row video-margin ">
+        <div class="row video-margin">
             <div id="video ad" class="col text-center">
-                <video ng-src="{{playingVideo}}" controls autoplay></video>
+                <video ng-src="{{playingVideo}}" controls autoplay ></video>
             </div>
             
         </div>            
             
         <div id="collect-btn" class="text-center video-margin">
-            <button class="btn btn-lg" ng-click="collectAndRequest()" ng-disabled="buttonEnabled">Collect Coins <img src="app/images/3-coin.png"></button>
+            <button class="btn btn-lg" ng-click="collectAndRequest()" ng-disabled="buttonEnabled">Collect Coins <img id="user-coins" src="app/images/3-coin.png" ng-hide="isCollected"></button>
 
         </div>            
 

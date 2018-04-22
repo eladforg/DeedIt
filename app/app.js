@@ -1,4 +1,4 @@
-var deeditApp = angular.module('deeditApp', ['ngRoute']);
+var deeditApp = angular.module('deeditApp', ['ngRoute', 'ngAnimate']);
 
 
 //creating router:

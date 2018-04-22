@@ -42,7 +42,7 @@
     } */
 
     #video-title h4{
-        font-size: 0.7em;
+        font-size: 0.75em;
         
     }
 
@@ -62,6 +62,23 @@
 
     #projects-body .font-size{
         font-size: 2em;
+    }
+
+    /* coins animation: */
+    @keyframes coinsUp {
+        from {
+            position: relative;
+            top:0;
+            left:0;
+        } to {
+            position: relative;
+            top:-280px;
+            left:20px;
+        }
+      }
+    
+    #user-coins.ng-hide{
+        animation: 1s coinsUp;
     }
 
 }
@@ -109,6 +126,23 @@
    
     #projects-body .font-size{
         font-size: 3em;
+    }
+
+    /* coins animation: */
+    @keyframes coinsUp {
+        from {
+            position: relative;
+            top:0;
+            left:0;
+        } to {
+            position: relative;
+            top:-540px;
+            left:180px;
+        }
+      }
+    
+    #user-coins.ng-hide{
+        animation: 1s coinsUp;
     }
     
 }
