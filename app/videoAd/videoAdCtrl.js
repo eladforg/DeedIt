@@ -53,6 +53,7 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
     
     $scope.collectAndRequest = function(){
         $scope.collectCoins();
+        $scope.coinSound();
         $scope.playingVideo = videoAdSer.requestVideo();
 
         //timer for enabling the liked buttons:
@@ -90,6 +91,11 @@ deeditApp.controller('videoAdCtrl', function($scope, activeUserSer, projectsSer,
         $scope.currentProjectObject.projectCoins+=3;
         // console.log($scope.currentProjectObject.projectCoins);
     }
+
+    $scope.coinSound = function() {
+        var audio = new Audio('app/videos/coin3.mp3');
+        audio.play();
+    };
     // specific function for requesting video:
     // $scope.requestVideo = function(){
         
