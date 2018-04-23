@@ -133,6 +133,19 @@
         text-align: center;
     }
 
+    
+/* css for profile page */
+
+    .profile-title{
+        font-size: 2em;
+        margin:5px 5px;
+    }
+
+    .update-btn{
+        text-align: center;
+    }
+
+
 }
 
 @media(min-width:441px){

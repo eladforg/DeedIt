@@ -6,12 +6,47 @@
 
     <div class="container">
 
-        <h2 class="text-center">Your Profile</h2>
+        <h2 class="display-4 text-warning text-center profile-title">Your Profile</h2>
+
         <ul class="list-group">
-            <li class="list-group-item">{{userName}}<button>update</button></li>
-            <li class="list-group-item">{{userEmail}}<button>update</button></li>
-            <li class="list-group-item">{userGender}<button>update</button></li>
-            <li class="list-group-item">{userAge}<button>update</button></li>   
+
+            <!-- user name: -->
+            <div class="row justify-content-end">
+                <li class="col-8 list-group-item col-md-9" >{{userName}}</li>
+                <button type="button" class="col-3 btn btn-sm m-2 col-md-2" data-toggle="modal" data-target="#userName">
+                    Update
+                </button>                
+            </div>
+
+            <!-- user email: -->
+            <div class="row justify-content-end">
+                <li class="col-8 list-group-item col-md-9" >{{userEmail}}</li>
+                <button type="button" class="col-3 btn btn-sm m-2 col-md-2" data-toggle="modal" data-target="#userEmail">
+                    Update
+                </button>                
+            </div>
+    
+            <!-- user Gender: -->
+            <div class="row justify-content-end">
+                <li class="col-8 list-group-item col-md-9" >{{userGender}}</li>
+                <button type="button" class="col-3 btn btn-sm m-2 col-md-2" data-toggle="modal" data-target="#userGender">
+                    Update
+                </button>                
+            </div>
+        
+            <!-- user Gender: -->
+            <div class="row justify-content-end">
+                <li class="col-8 list-group-item col-md-9" >{{userAge}}</li>
+                <button type="button" class="col-3 btn btn-sm m-2 col-md-2" data-toggle="modal" data-target="#userAge">
+                    Update
+                </button>                
+            </div>
+            
+
+
+            
+            
+               
             <button><li class="list-group-item">projects you supported</li></button> <!-- link to a new page -->
             <button><li class="list-group-item">Medals and Trophies</li></button> <!-- link to a new page -->            
             <button><li class="list-group-item">Change Password</li></button> <!-- modal for changing passowrd-->
