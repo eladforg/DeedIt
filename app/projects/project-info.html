@@ -5,44 +5,47 @@
 <div class="container">
     
     <!-- profile-image of the project + it's name: -->
-    <div>        
-        <img src="" alt="project-profile-image"><h1 class="display-4 my-4 project-title">Name of Project</h1>
+    <div>              
+        <img src="{{currentProjectObject.projectImage}}" alt="project-profile-image"><h1 class="display-4 my-4 project-title">{{currentProjectObject.projectName}}</h1>
     </div>
 
     <!-- organization name + its' website -->
     <div>
-        <ul>
-            <li>organization name</li>
-            <li>organization website</li>
+        <ul><p>By:</p> 
+            <li><img ng-src="{{currentProjectObject.projectOrg}}" alt="{{currentProjectObject.orgName}}"></li>
+            <li><a href="{{currentProjectObject.orgWebsite}}" target="_blank">{{currentProjectObject.orgWebsite}}</a></li>
         </ul>
     </div>
 
     <!-- full info about the project -->
     <div>
-        <p class="aboutus-paragraph">Full info about the project and the non-profit organization. 
-            <br>some more info...
+        <p class="aboutus-paragraph">{{currentProjectObject.fullInfoPar}} 
+            <br>
         </p>
     </div>
 
     <!-- images and videos -->
-    <div>
-        <p>Here we can publish more images and videos of the project/organization.</p>
+    <div>        
         <div class="row">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="{{currentProjectObject.imagesArray[0]}}" alt="">
+            <img src="{{currentProjectObject.imagesArray[1]}}" alt="">
+            <img src="{{currentProjectObject.imagesArray[2]}}" alt="">
         </div>
         <div class="row">
-                <video src=""></video>
+                <video src="{{currentProjectObject.videosArray[0]}}"></video>
         </div>
     </div>
     
     <!-- last words -->
     <div>
         <p class="aboutus-paragraph">
-            One more sentence to encourage the users<br>
-            and option for another one.            
+            {{currentProjectObject.statement}}       
         </p>
+    </div>
+
+    <!-- support button -->
+    <div>
+        <support-but></support-but>
     </div>
     
 

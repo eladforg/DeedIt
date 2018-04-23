@@ -15,7 +15,7 @@
                 <div class="card-body my-0">
                     <h5 class="card-title my-1" style="color:rgb(21, 147, 156); font-size:1.5em">{{projectItem.projectName}}</h5>
                     <p class="card-text my-1">{{projectItem.projectSummary}}</p>
-                    <a ng-href="#!/project-info" class="card-link my-1 text-info">Read More...</a>
+                    <a ng-href="#!/project-info/{{projectItem.projectID}}" class="card-link my-1 text-info">Read More...</a>
                 </div>
                 <ul class="list-group list-group-flush my-0 ">
                     <li class="list-group-item d-flex">Goal: <span class="col text-right">{{projectItem.projectGoal | currency:fractionSize:0}}</span></li>

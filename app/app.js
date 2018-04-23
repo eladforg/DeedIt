@@ -32,7 +32,7 @@ deeditApp.config(function($routeProvider){
         controller:"aboutusCtrl"
     })
 
-    .when("/project-info", {
+    .when("/project-info/:projID", {
         templateUrl:"app/projects/project-info.html",
         controller:"projectInfoCtrl"
     })
