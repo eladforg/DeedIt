@@ -1,5 +1,6 @@
-deeditApp.controller('projectInfoCtrl', function($scope){
+deeditApp.controller('projectInfoCtrl', function($scope, projectsSer){
 
+    
 
 
 });

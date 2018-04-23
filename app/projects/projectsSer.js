@@ -19,6 +19,10 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
 
         //details for the more info page:
         this.projectOrg=projObj.projectOrg;
+        this.orgWebsite=projObj.orgWebsite;
+        this.imagesArray=projObj.imagesArray;
+        this.fullInfoPar=projObj.fullInfoPar;
+        this.statement=projObj.statement;
 
     }
 

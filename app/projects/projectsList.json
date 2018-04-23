@@ -18,8 +18,12 @@
     "projectSummary":"Let's ensure a daily notritious meal for more kids.",
     "projectGoal":"20000",
     "deadline": "2018,5,25",
-    "projectOrg":"http://www1.wfp.org/themes/custom/wfp_org/images/logos/wfp-logo-extended-white-en.svg"
 
+    "projectOrg":"https://www.globalhand.org/system/images/4bb5892b5203ab9b67c63fc78bab52a28413cfe9/logo/wfp.jpeg?1334941425",
+    "orgWebsite":"http://www1.wfp.org/",
+    "imagesArray":["http://www.un.org/sites/www.un.org/files/styles/large/public/2015/04/08/undp-subsidized-school-fees-and-building-repairs-chin-state-myanmar.jpg","http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/5/28/1369739436763/05-School-meal-006.jpg","https://tslnigeria.tv/wp-content/uploads/2017/08/1482632801523.jpg"],
+    "fullInfoPar":"Assisting 80 million people in around 80 countries each year, the World Food Programme (WFP) is the leading humanitarian organization fighting hunger worldwide, delivering food assistance in emergencies and working with communities to improve nutrition and build resilience.",
+    "statement":"Join us to end the hunger!"
     },
 
     {   
