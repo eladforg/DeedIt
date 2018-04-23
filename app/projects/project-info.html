@@ -5,47 +5,49 @@
 <div class="container">
     
     <!-- profile-image of the project + it's name: -->
-    <div>              
-        <img src="{{currentProjectObject.projectImage}}" alt="project-profile-image"><h1 class="display-4 my-4 project-title">{{currentProjectObject.projectName}}</h1>
+    <div class="text-center">              
+        <img class="profile-image-size mt-3" src="{{currentProjectObject.projectImage}}" alt="project-profile-image"><h1 class="display-4 my-2 project-title">"{{currentProjectObject.projectName}}"</h1>
     </div>
-
+<hr>
     <!-- organization name + its' website -->
     <div>
-        <ul><p>By:</p> 
-            <li><img ng-src="{{currentProjectObject.projectOrg}}" alt="{{currentProjectObject.orgName}}"></li>
+        <ul class="project-info"><p class="mb-0">By:</p> 
+            <li><img class="org-logo" ng-src="{{currentProjectObject.projectOrg}}" alt="{{currentProjectObject.orgName}}"></li>
             <li><a href="{{currentProjectObject.orgWebsite}}" target="_blank">{{currentProjectObject.orgWebsite}}</a></li>
         </ul>
     </div>
-
+<hr>
     <!-- full info about the project -->
-    <div>
+    <div class="my-5">
         <p class="aboutus-paragraph">{{currentProjectObject.fullInfoPar}} 
             <br>
         </p>
     </div>
-
+<hr>
     <!-- images and videos -->
     <div>        
-        <div class="row">
-            <img src="{{currentProjectObject.imagesArray[0]}}" alt="">
-            <img src="{{currentProjectObject.imagesArray[1]}}" alt="">
-            <img src="{{currentProjectObject.imagesArray[2]}}" alt="">
+        <div class="row justify-content-around images">
+            <img class="info-image-size" src="{{currentProjectObject.imagesArray[0]}}" alt="">
+            <img class="info-image-size" src="{{currentProjectObject.imagesArray[1]}}" alt="">
+            <img class="info-image-size" src="{{currentProjectObject.imagesArray[2]}}" alt="">
         </div>
-        <div class="row">
-                <video src="{{currentProjectObject.videosArray[0]}}"></video>
+        <div class="info-video">
+            <video class="video" src="{{currentProjectObject.videosArray[0]}}" controls></video>
         </div>
     </div>
-    
+<hr>
     <!-- last words -->
-    <div>
-        <p class="aboutus-paragraph">
+    <div class="mt-5">
+        <p class="statement text-warning">
             {{currentProjectObject.statement}}       
         </p>
     </div>
 
     <!-- support button -->
-    <div>
-        <support-but></support-but>
+    <div class="text-center">
+        <div class="support-button">
+            <support-but></support-but>
+        </div>
     </div>
     
 

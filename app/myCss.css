@@ -97,9 +97,40 @@
     }
 
     /* css for the project-info page */
+
+    
     .project-title{
         font-size: 1.5em;
         color:rgb(21, 147, 156);
+    }
+
+    .profile-image-size{
+        width:100%;
+        height:auto;
+        border-radius: 10%;
+
+    }
+
+    ul.project-info{
+        list-style: none;
+    }
+
+    .org-logo{
+        width:80%;
+        height:"auto";
+        
+    }
+
+    .info-image-size{
+        width:150px;
+        height:150px;
+        margin:5px;
+    }
+
+    p.statement{
+        font-size:1.2em;
+        font-weight: bold;
+        text-align: center;
     }
 
 }
@@ -182,6 +213,60 @@
         color: white;
         margin-left: 10px;
     }
+
+
+    /* css for the project-info page */
+
+    
+    .project-title{
+        font-size: 3em;
+        color:rgb(21, 147, 156);
+    }
+
+    .profile-image-size{
+        width:500px;
+        height:auto;
+        border-radius: 10%;
+
+    }
+
+    ul.project-info{
+        list-style: none;
+    }
+
+    .org-logo{
+        max-width:300px;
+        height:"auto";
+        
+    }
+
+    div.images{
+        margin-top:80px;
+        margin-bottom:10px;
+    }
+    .info-image-size{
+        max-width:300px;
+        max-height:300px;
+        
+    }
+
+    .info-video{
+        margin-top:80px;
+        margin-bottom:30px;
+        text-align: center;
+    }
+
+    p.statement{
+        font-size:2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div.support-button{
+        display: inline-block;
+        width:300px;
+    }
+
 }
 
 
