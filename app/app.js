@@ -26,6 +26,11 @@ deeditApp.config(function($routeProvider){
         templateUrl:"app/videoAd/videoAd.html",
         controller:"videoAdCtrl"
     })
+
+    .when("/aboutus", {
+        templateUrl:"app/aboutus/aboutus.html",
+        controller:"aboutusCtrl"
+    })
     
     .otherwise({
         redirectTo:"/projects"
