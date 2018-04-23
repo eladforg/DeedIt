@@ -145,6 +145,10 @@
         text-align: center;
     }
 
+    .but-app-color{
+        background-color:rgb(21, 147, 156);
+    }
+
 
 }
 
@@ -278,6 +282,13 @@
     div.support-button{
         display: inline-block;
         width:300px;
+    }
+
+    /* css for profile page */
+
+    .but-app-color{
+        background-color:rgb(21, 147, 156);
+        
     }
 
 }
