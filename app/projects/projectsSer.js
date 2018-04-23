@@ -17,6 +17,9 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
         // this.progressBar= function(progressBar){};
         this.projectCoins = 0;
 
+        //details for the more info page:
+        this.projectOrg=projObj.projectOrg;
+
     }
 
     //creating a countdown day timer:

@@ -96,6 +96,12 @@
         animation: 1s coinsUp;
     }
 
+    /* css for the project-info page */
+    .project-title{
+        font-size: 1.5em;
+        color:rgb(21, 147, 156);
+    }
+
 }
 
 @media(min-width:441px){

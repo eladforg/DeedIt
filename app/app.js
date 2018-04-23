@@ -31,6 +31,11 @@ deeditApp.config(function($routeProvider){
         templateUrl:"app/aboutus/aboutus.html",
         controller:"aboutusCtrl"
     })
+
+    .when("/project-info", {
+        templateUrl:"app/projects/project-info.html",
+        controller:"projectInfoCtrl"
+    })
     
     .otherwise({
         redirectTo:"/projects"
