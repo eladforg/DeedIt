@@ -157,7 +157,7 @@
     .welcome-bg{
     background-image: url("images/hands.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto; 
+    background-size: 100% auto ; 
     }
 
     .welcome-text h1{
@@ -293,6 +293,25 @@
 
 }
 
+@media(min-width:1200px){
+    footer{        
+        margin-top: 550px;               
+        width:100%;        
+        background-color: rgb(130, 130, 130);
+        
+    }
+    footer p{       
+        
+        font-size: 1em;
+        text-align: end;
+        
+    }
+    footer a{
+        color: white;
+        margin-left: 10px;
+    }
+
+}
 
 
 .app-box-shadow{
