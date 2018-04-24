@@ -186,8 +186,8 @@
                         
                             <!-- list of projects user supported with amount of coins with ng-repeat -->
                             <div id="video-title" class="row text-center align-items-center" ng-repeat="userProjItem in userProjectsArray">                                    
-                                <h4 class="col-7" ><img src="{{currentProjectObject.projectImage}}" alt=""> "{{currentProjectObject.projectName}}" </h4>
-                                <h4 class="col-5">{{projectCoinsbyUser}} <img src="app/images/jackpot.png" alt=""></h4>
+                                <h4 class="col-7" ><img src="{{userProjItem.projectImage}}" alt=""> "{{userProjItem.projectName}}" </h4>
+                                <h4 class="col-5">{{userProjItem.projectUserCoins}} <img src="app/images/jackpot.png" alt=""></h4>
                             </div>
                     </div>
                 </div>   
