@@ -20,10 +20,10 @@ deeditApp.factory('activeUserSer', function($q, $http){
 
     // we need activeUser and for now we'll use a demo one. so we dont have to login.
     var activeUser={
-        "name":"remo user",
-        "email":"r@go.co",
+        "name":"Ms. Tapuah",
+        "email":"tapuah@moodle.co",
         "password":"321",
-        "gender":"man",
+        "gender":"woman",
         "age":"adult",
         "totalCoins":0,
         "supportedProjects":{}

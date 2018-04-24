@@ -327,6 +327,11 @@
         margin:auto;       
         
     }
+    .welcome-bg{
+        background-image: url("images/hands2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto ; 
+    }
 
 }
 
