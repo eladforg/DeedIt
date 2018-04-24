@@ -49,6 +49,8 @@
     #video-title{
         border: 2px solid rgb(21, 147, 156);
         margin: 10px 10px;
+        
+        
     }
 
     .video-margin{
@@ -149,6 +151,9 @@
         background-color:rgb(21, 147, 156);
     }
 
+    .proj-coins-bd{        
+        width:100%;
+    }
 
 }
 
@@ -291,6 +296,12 @@
         
     }
 
+    .proj-coins-bd{        
+        width:500px;
+        margin:auto;       
+        
+    }
+
 }
 
 @media(min-width:1200px){
@@ -309,6 +320,12 @@
     footer a{
         color: white;
         margin-left: 10px;
+    }
+
+    .proj-coins-bd{        
+        width:700px;
+        margin:auto;       
+        
     }
 
 }
