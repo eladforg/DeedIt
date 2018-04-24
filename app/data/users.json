@@ -1,8 +1,12 @@
 [
 
     {
-        "name":"demo user",
-        "email":"d@go.co",
-        "password":"123"
+        "name":"Ms.Tapuah",
+        "email":"apple@go.co",
+        "password":"123",
+        "gender":"woman",
+        "age":"adult",
+        "totalCoins":0,
+        "supportedProjects":{}
     }
 ]
