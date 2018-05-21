@@ -55,7 +55,7 @@ deeditApp.factory('projectsSer', function($http, $q, $location){
             for(var i=0; i<response.data.length; i++){
                 let projObj = response.data[i];
                 
-                projectsArray.push(new Project(projObj));
+                projectsArray.push(new Project(projObj)); // we can push directly the object to the array but we're using the project constructor as we want to fit the data to our needs and add methods as daysleft. that way we have control on the data we get, we convert it to our needs.
                 
                   
                 }          
