@@ -38,9 +38,9 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
             }else{
                 
             }
-
+            
         }
-        alert("are you sure?")
+        alert("are you sure?");
     }
 
     // function to move to next page after valid login:
@@ -56,6 +56,20 @@ deeditApp.controller('welcomeCtrl', function($scope, $location, activeUserSer){
             }else{}
     }
     
+    
+// ---------------------------------------signup-----------------------------------------------------------------
 
+    // collecting user sign up details:
+    $scope.userFullName="";
+    $scope.userAge=""; //young/adult/senior
+    $scope.userGender=""; //man/woman
+    $scope.userEmail="";
+    $scope.userPass="";
+    $scope.userConPass="";
+    $scope.userTerms=false;
 
+    // making sure user details are valid:
+    //if
+    
+    
 });

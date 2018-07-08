@@ -38,8 +38,8 @@ deeditApp.factory('activeUserSer', function($q, $http){
         $http.get('app/data/users.json').then(
             //on success:
             function(response){
-                for (var i=0; i<response.data.length; i++){
-                    usersArray.push(new User(response.data[i]));
+                for (var i=0; i<response.data.appUsers.length; i++){
+                    usersArray.push(new User(response.data.appUsers[i]));
                 }
 
                 async.resolve();

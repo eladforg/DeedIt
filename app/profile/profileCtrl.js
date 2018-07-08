@@ -16,11 +16,12 @@ deeditApp.controller('profileCtrl', function($scope, activeUserSer, projectsSer)
     $scope.userGender=activeUserSer.activeUser.gender;
     $scope.userAge=activeUserSer.activeUser.age;
 
+
     // passing user and its projects
     $scope.userProjects=$scope.activeUser.supportedProjects;
     // console.log($scope.userProjectsArray);
     // console.log($scope.userProjects);
-
+    
     // looping into the userProjects object.
     // if we locate an id equal to one in the array than we'll add it's property:
     // there are two ways to do it:
@@ -35,7 +36,7 @@ deeditApp.controller('profileCtrl', function($scope, activeUserSer, projectsSer)
         for(i=0; i<$scope.userProjectsArray.length;i++){
             if(prop==$scope.userProjectsArray[i]["projectID"]){
                 $scope.userProjectsArray[i].projectUserCoins= $scope.userProjects[prop];
-                  
+                //   console.log($scope.userProjects[prop]);
                 // console.log($scope.userProjectsArray);
             }
         }

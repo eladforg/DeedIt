@@ -1,12 +1,32 @@
-[
+{
+   "appUsers": [
 
-    {
-        "name":"Ms.Tapuah",
-        "email":"apple@go.co",
-        "password":"123",
-        "gender":"woman",
-        "age":"adult",
-        "totalCoins":0,
-        "supportedProjects":{}
-    }
-]
+        {
+            "name":"Ms.Tapuah",
+            "email":"apple@go.co",
+            "password":"123",
+            "gender":"woman",
+            "age":"adult",
+            "totalCoins":0,
+            "supportedProjects":{}
+        },
+        {
+            "name":"Ms.peach",
+            "email":"peach@go.co",
+            "password":"456",
+            "gender":"woman",
+            "age":"adult",
+            "totalCoins":0,
+            "supportedProjects":{}
+        },
+        {
+            "name":"Mr.Orange",
+            "email":"orange@go.co",
+            "password":"456",
+            "gender":"man",
+            "age":"adult",
+            "totalCoins":0,
+            "supportedProjects":{}
+        }
+    ]
+}
